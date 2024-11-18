@@ -1,15 +1,5 @@
 .react-flow__node {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 0.5rem;
-
     width: auto;
-
-    &:has(.react-flow__handle-left > .handle-label) {
-        padding-left: 5rem;
-    }
 
     .react-flow__handle {
         min-width: 0.5rem;
@@ -38,23 +28,5 @@
             font-size: 0.7rem;
             line-height: 1em;
         }
-    }
-
-    .node-title {
-        margin: 0;
-        margin-bottom: 0.5rem;
-        padding: 0;
-
-        font-size: 1.25rem;
-        font-weight: 500;
-        text-align: center;
-    }
-
-    .node-form {
-        display: contents;
-    }
-
-    .p-float-label > .p-component {
-        width: 100%;
     }
 }

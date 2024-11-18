@@ -1,0 +1,36 @@
+.node-body {
+    width: auto;
+    padding: 0 0.5rem;
+
+    &.node-body-inputs {
+        border-left: 1px solid white;
+    }
+
+    .node-title {
+        margin: 0;
+        margin-bottom: 0.5rem;
+        padding: 0;
+
+        font-size: 1.25rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .node-content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 0.5rem;
+
+        width: auto;
+    }
+
+    .node-form {
+        display: contents;
+    }
+
+    .p-float-label > .p-component {
+        width: 100%;
+    }
+}

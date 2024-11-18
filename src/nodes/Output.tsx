@@ -3,7 +3,7 @@ import { FloatLabel } from 'primereact/floatlabel';
 import { InputText } from 'primereact/inputtext';
 import { useState } from 'react';
 import { Dropdown } from 'primereact/dropdown';
-import { InputHandles } from '../components/HandleGroup';
+import ExtendedNode from '../components/ExtendedNode';
 
 const formats = [{ value: 'PNG', label: 'PNG' }];
 
@@ -12,17 +12,14 @@ export function OutputNode() {
     const [format, setFormat] = useState<string>('PNG');
 
     return (
-        <>
-            <InputHandles
-                handles={[
-                    { id: 'r', color: 'red', label: 'Red' },
-                    { id: 'g', color: 'green', label: 'Green' },
-                    { id: 'b', color: 'blue', label: 'Blue' },
-                    { id: 'a', color: 'white', label: 'Alpha' },
-                ]}
-            />
-
-            <h2 className='node-title'>Output</h2>
+        <ExtendedNode
+            inputs={[
+                { id: 'r', color: 'red', label: 'Red' },
+                { id: 'g', color: 'green', label: 'Green' },
+                { id: 'b', color: 'blue', label: 'Blue' },
+                { id: 'a', color: 'white', label: 'Alpha' },
+            ]}
+            title='Output'>
             <form className='node-form' action=''>
                 <FloatLabel>
                     <InputText id='filename' value={filename} onChange={(e) => setFilename(e.target.value)} />
@@ -33,6 +30,6 @@ export function OutputNode() {
                     <label htmlFor='format'>Format</label>
                 </FloatLabel>
             </form>
-        </>
+        </ExtendedNode>
     );
 }
