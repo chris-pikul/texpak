@@ -40,6 +40,7 @@ export default function Flow() {
             colorMode='dark'>
             <Controls />
             <MiniMap />
+            {/* @ts-expect-error types are wrong on variant */}
             <Background variant='dots' gap={12} size={1} />
         </ReactFlow>
     );

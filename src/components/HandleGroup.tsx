@@ -1,5 +1,5 @@
 import { Children, cloneElement, isValidElement, PropsWithChildren, ReactNode } from 'react';
-import { ExtendedHandleProps, InputHandle, InputHandleProps, OutputHandle, OutputHandleProps } from './ExtendedHandle';
+import { InputHandle, InputHandleProps, OutputHandle, OutputHandleProps } from './ExtendedHandle';
 
 function childrenWithProps(children: ReactNode, props: Record<string, any> | ((index: number) => Record<string, any>)) {
     return Children.map(children, (child, index) => {

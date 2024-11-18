@@ -1,5 +1,5 @@
 import { Handle, HandleProps, Position } from '@xyflow/react';
-import { FC, PropsWithoutRef } from 'react';
+import { FC } from 'react';
 
 export type ExtendedHandleProps = HandleProps & {
     color?: string;
