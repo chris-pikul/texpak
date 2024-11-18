@@ -1,0 +1,4 @@
+.react-flow__node-output {
+    border-color: red;
+    background: color-mix(in srgb, var(--xy-node-background-color-default), red 5%);
+}
